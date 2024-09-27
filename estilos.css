@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #3e3d47; /* Fondo gris claro */
+}
+
+/* Estilo del contenedor de la calculadora */
+.calculadora {
+    flex-direction: column;      /* Organiza los elementos en columna */
+    justify-content: center;
+    align-items: center; 
+    height: auto;
+    background-color: #2c2c2c; /* Fondo blanco para la calculadora */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para el efecto 3D */
+    text-align: center; /* Texto centrado */
+    max-width: 300px; /* Ancho máximo */
+    width: 100%; /* Ancho completo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para la pantalla de la calculadora */
+#resultado {
+    width: 84%; /* Ancho completo */
+    padding: 15px; /* Espaciado interno */
+    font-size: 24px; /* Tamaño de fuente */
+    text-align: right; /* Texto alineado a la derecha */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Margen inferior */
+    
+    background-color: #f9f9f9; /* Fondo gris claro */
+}
+
+/* Estilo de los botones */
+.boton {
+    color: white;
+    width: 60px; /* Ancho de los botones */
+    height: 60px; /* Alto de los botones */
+    margin: 5px; /* Margen alrededor */
+    font-size: 24px; /* Tamaño de fuente */
+    border: none; /* Sin borde */
+    background-color: #646464; /* Fondo gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo puntero */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+/* Estilo de los botones de operadores */
+.boton-operador {
+    background-color: #164179; /* Color naranja para operadores */
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+.boton:hover {
+    background-color: rgb(165, 165, 165); /* Cambio a un gris más oscuro */
+}
+
+.boton-operador:hover {
+    background-color: #4c6588; /* Color más oscuro para botones de operador */
+}
+
+/* Efecto al hacer clic en el botón de limpiar (C) */
+.boton.boton-operador:active {
+    background-color: #264653; /* Color más oscuro al hacer clic */
+}
+
+.encabezado{
+    letter-spacing: 2px;
+    color: white;
+    display: flex;                /* Activa flexbox */
+    flex-direction: column;      /* Organiza los elementos en columna */
+    justify-content: center;      /* Centra verticalmente */
+    align-items: left;          /* Centra horizontalmente */
+    height: 10vh;
+    margin: 10px; 
+}
+
+.contenido{
+    flex-direction: column;
+}

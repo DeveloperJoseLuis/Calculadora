@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+    
+<body>
+    <div class="contenido">
+        <h1 class="encabezado">Calculadora.</h1>
+        <div class="calculadora">
+            <input type="text" id="resultado" disabled>
+            <!-- Botones de la calculadora -->
+            <button class="boton" onclick="añadirValor('7')">7</button>
+            <button class="boton" onclick="añadirValor('8')">8</button>
+            <button class="boton" onclick="añadirValor('9')">9</button>
+            <button class="boton boton-operador" onclick="añadirValor('/')">/</button>
+            <br>
+            <button class="boton" onclick="añadirValor('4')">4</button>
+            <button class="boton" onclick="añadirValor('5')">5</button>
+            <button class="boton" onclick="añadirValor('6')">6</button>
+            <button class="boton boton-operador" onclick="añadirValor('*')">*</button>
+            <br>
+            <button class="boton" onclick="añadirValor('1')">1</button>
+            <button class="boton" onclick="añadirValor('2')">2</button>
+            <button class="boton" onclick="añadirValor('3')">3</button>
+            <button class="boton boton-operador" onclick="añadirValor('-')">-</button>
+            <br>
+            <button class="boton" onclick="añadirValor('0')">0</button>
+            <button class="boton" onclick="añadirValor('.')">.</button>
+            <button class="boton" onclick="calcular()">=</button>
+            <button class="boton boton-operador" onclick="añadirValor('+')">+</button>
+            <br>
+            <button class="boton" onclick="limpiar()">C</button>
+
+        </div>
+    </div>
+    <script>
+        function añadirValor(valor) {
+            document.getElementById("resultado").value += valor;
+        }
+
+        function calcular() {
+            try {
+                var resultado = eval(document.getElementById("resultado").value);
+                document.getElementById("resultado").value = resultado;
+            } catch (e) {
+                document.getElementById("resultado").value = "Error";
+            }
+        }
+
+        function limpiar() {
+            document.getElementById("resultado").value=""
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') { // Verifica si la tecla presionada es "Enter"
+                calcular(); // Llama a la función calcular
+            }
+        });
+    </script>
+</body>
+</html>
