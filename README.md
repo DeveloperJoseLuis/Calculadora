@@ -9,9 +9,6 @@ Este código a sido creado con ayuda de ChatGPT, demostrando que un joven con no
 - [Características](#características)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Instalación](#instalación)
-- [Uso](#uso)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
 
 ## Características
 
