@@ -2,6 +2,8 @@
 
 Este es un proyecto de calculadora simple desarrollada con HTML, CSS y JavaScript. La calculadora permite realizar operaciones aritméticas básicas como suma, resta, multiplicación y división.
 
+Este código a sido creado con ayuda de ChatGPT, demostrando que un joven con no mucha experiencia como yo puede crear proyectos con el buen uso de las IA.
+
 ## Tabla de Contenidos
 
 - [Características](#características)
